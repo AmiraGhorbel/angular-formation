@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-add-match',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-match.component.css']
 })
 export class AddMatchComponent {
-
+  match:any = {};
+  // Form ID
+  addMatchForm!:FormGroup;
+  addMatch(){
+    console.log("Here is my data: ",this.match);
+    // alert(this.match.scoreOne+""+this.match.scoreTwo);
+  }
 }
