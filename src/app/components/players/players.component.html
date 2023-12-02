@@ -1,0 +1,16 @@
+<p style="text-align: center;padding-top: 5%;font-size: 30px;">All players</p>
+<div class="row">
+    <div class="col-lg-12" *ngFor="let x of TabPplays">
+        <div class="custom-media d-flex">
+            <div class="img mr-4">
+                <img [src]="x.img" style="padding-bottom: 10%;" alt="Image" class="img-fluid" width="120px" height="120px">
+                <!-- <img src={{x.img}} alt="Image" class="img-fluid"> -->
+            </div>
+            <div class="text" style="font-size: 13px; color: white;">
+                <p class="meta">Nom:  {{x.name}}</p>
+                <p class="meta">Nbr:  {{x.nbr}}</p>
+                <p class="meta">Position:  {{x.position}}</p>
+            </div>
+        </div>
+    </div>
+</div>
